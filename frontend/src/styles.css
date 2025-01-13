@@ -1,0 +1,95 @@
+/* Overall background for the entire project */
+body {
+  background-color: #1e252e; /* Background color for the entire page */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1vw;
+}
+
+/* General Movie Grid Styling */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px 20px; /* Horizontal and vertical space between items */
+  margin: 20px;
+}
+
+.movie-card {
+  background-color: #202c32;
+  padding: 20px;
+  border-radius: 8px;
+  color: #e6e5e8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the button stays at the bottom */
+  height: 90%;
+  margin-bottom: 1vh;
+}
+
+.movie-card h3 {
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  margin-bottom: 15px;
+  flex-grow: 1; /* Ensures content takes up available space, pushing the button down */
+}
+
+/* Button Styling */
+.movie-card button {
+  background-color: #0a6310; /* Green background */
+  color: #e6e5e8; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.movie-card button:hover {
+  background-color: #085c08; /* Darker green on hover */
+}
+
+.ttpg{
+  color: white;
+}
+
+/* Modal Styling */
+
+/* Modal Content */
+.ReactModal__Content {
+  background-color: #202c32; /* Modal box background color */
+  border-radius: 8px;
+  max-width: 80vw;
+  margin: auto;
+  position: relative;
+  z-index: 10000; /* Ensure the modal content is above the overlay */
+}
+
+/* Title inside the modal */
+.ReactModal__Content h2 {
+  background-color: #0a6310; /* Green background for the title */
+  color: white; /* White text */
+  text-align: center; /* Center the title */
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+/* Close Button Styling */
+.ReactModal__Content button {
+  background-color: #0a6310; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ReactModal__Content button:hover {
+  background-color: #085c08; /* Darker green on hover */
+}
